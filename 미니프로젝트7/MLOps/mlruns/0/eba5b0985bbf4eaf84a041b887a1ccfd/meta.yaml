@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B87/MLOps/mlruns/0/eba5b0985bbf4eaf84a041b887a1ccfd/artifacts
+end_time: 1684373339532
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eba5b0985bbf4eaf84a041b887a1ccfd
+run_name: rebellious-swan-400
+run_uuid: eba5b0985bbf4eaf84a041b887a1ccfd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1684373324792
+status: 3
+tags: []
+user_id: User
