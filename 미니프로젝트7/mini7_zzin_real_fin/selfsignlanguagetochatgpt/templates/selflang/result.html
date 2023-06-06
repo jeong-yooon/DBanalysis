@@ -1,0 +1,29 @@
+{% load static %}
+{% block extrahead %}
+<head>
+    <link rel="stylesheet" href="{% static 'selflang/results.css' %}">
+</head>
+
+<body>
+    {% endblock %}
+
+    <form action="chat" method="post" entype="application/x-www-form-urlencoded">
+        {% csrf_token %}
+        <div id="file-module-0">
+            <div class ='titlebackground'>
+                <header>수어 번역 서비스</header><br>
+            </div>
+            <label style="padding-left: 20px;">딥러닝 기반 수어 번역 서비스 입니다. 수어 이미지를 업로드하여 chat gpt에게 질문하세요.</label><br>
+            <textarea id="question" name="question">{{question}}</textarea>
+        </div>
+        <div>
+   
+        
+    </div>
+        
+        <textarea id="answer" name="answer">{{result}}</textarea>
+
+    </form>
+</body>
+{% include "footer.html" %}
+<div><a href="/selfsignlanguagetochatgpt/"><button type="button">돌아가기</button></a></div>

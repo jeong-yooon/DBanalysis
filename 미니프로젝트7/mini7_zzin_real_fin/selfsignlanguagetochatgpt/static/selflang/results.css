@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .titlebackground{
+    color:white;
+    font-size:40px;
+    font-weight: bold;  
+    background-color: #96AC93;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 20px;
+  }
+  
+  label{font-size: 18px;
+    font-weight: 500;}
+  
+  #question{
+    resize: none;
+    margin-top:50px;
+    width : 60%;
+    height : 200px;
+    padding : 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size:18px;
+    transform: translate(30%);
+    box-shadow: 2px 2px 2px gray;
+    background-color: #ECECEC;
+    border: none;
+  }
+  button{
+    margin-top:20px;
+    width : 60%;
+    border-radius: 5px;
+    transform: translate(30%);
+    background-color: #EBEBEB;
+    border: none;
+    box-shadow: 1px 1px 1px gray;
+    font-size:20px;
+    
+  }
+  #answer{
+    border: none;
+    resize: none;
+    margin-top : 50px;
+    width : 60%;
+    height : 200px;
+    padding : 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size:18px;
+    transform: translate(30%);
+    box-shadow: 2px 2px 2px gray;
+    background-color: #ECECEC;
+  }
+  
+  

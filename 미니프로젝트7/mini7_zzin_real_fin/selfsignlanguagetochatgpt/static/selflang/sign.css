@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+.titlebackground{
+    color:white;
+    font-size:40px;
+    font-weight: bold;  
+    background-color: #96AC93;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 20px;
+}
+/* 파일 추가 버튼 스타일 */
+.add-file-button {
+    margin-top: 300px;
+}
+
+/* 전송 버튼 스타일 */
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #96AC93;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    width:420px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #96AC93;
+}
+
+/* 돌아가기 버튼 스타일 */
+#go-back-button {
+    margin-top: 20px;
+}
+
+.drop-zone {
+    border: 2px dashed #96AC93;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.drop-zone.drop {
+    background-color: #ddd;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color:  #96AC93;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    
+}
+
+.drop-zone {
+     margin-top: 10px;
+     width: 320px;
+     height: 200px;
+     padding: 50px;
+     border: 2px dashed #ccc;
+     color: #aaa;
+     background-color: #f9f9f9;
+     text-align: center;
+     vertical-align: middle;
+     line-height: 180px;
+     border: 2px dashed #96AC93;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+}
+
+.drop-zone.drop {
+    background-color: #ccc;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #96AC93;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.add-file-button {
+    margin-top: 10px;
+    width:420px;
+}
+
+.go-back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.go-back-button a {
+    text-decoration: none;
+}
+
+.go-back-button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.go-back-button button:hover {
+    background-color: #c82333;
+}
+
+.ssltc_comment_title{
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 50px
+}
+
+label{font-size: 18px;
+    font-weight: 500;}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<script src = "{% static 'selflang/js/index.js' %}"></script>
+<link rel="stylesheet" href="{% static 'selflang/sign.css' %}">
+
+<div class ='titlebackground'>
+  <header>수어 번역 서비스</header><br>
+</div>
+
+<label style="padding-left: 20px;">딥러닝 기반 수어 번역 서비스 입니다. 수어 이미지를 업로드하여 chat gpt에게 질문하세요.</label><br>
+<form id="upload-form" action="chat" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <legend><h1>파일 업로드</h1></legend>
+    <div class="ssltc_comment_title">
+      <div class="ssltc_comment">1. 하고자 하는 말의 알파벳 수만큼 파일 추가를 누르세요.</div>
+      <div class="ssltc_comment">2. 네모칸 안에 수어 이미지를 드래그하여 추가하세요.</div>
+      <div class="ssltc_comment">3. 수어로 문의하기를 클릭하세요.</div>
+    </div>
+    <button onclick="addFile()" type="button" class="add-file-button">파일 추가</button>
+    <div id="file-container"></div> <!-- 추가: 파일 출력 영역 -->
+    
+    <span id="file-module-0">
+        <fieldset>
+        
+          
+            <div id="drop_zone-0" class="drop-zone">여기에 파일을 드래그하세요.</div>
+            <input id="file-input-0" name="files" type="file" multiple>
+        </fieldset>
+    </span>
+    <input type="submit" value="ChatGPT에게 수어로 문의하기">
+</form>
+{% include "footer.html" %}
+{% endblock %}

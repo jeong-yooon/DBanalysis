@@ -1,0 +1,19 @@
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'languagechat/style.css' %}">
+<script>
+   
+</script>
+{% endblock %}
+<form action="chat" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <span id="file-module-0">
+        <fieldset>
+            <legend><h1>파일 업로드</h1></legend>
+            <input name="files" type="file">
+
+        </fieldset>
+    </span>
+    <button onclick="addFile()" type="button">파일 추가 </button>
+    <div><input type="submit" value="ChatGPT에게 수어로 문의하기"></div>
+</form>
