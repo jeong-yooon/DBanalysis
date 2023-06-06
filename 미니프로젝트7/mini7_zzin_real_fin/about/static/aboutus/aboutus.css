@@ -1,0 +1,106 @@
+header {
+  background-color: #96AC93;
+  text-align: left;
+  padding: 20px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #fff;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 50px;
+  grid-column-gap: 3px;
+  justify-items: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.profile {
+  width: 295px;
+  height: 150px;
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.profile .profile-image {
+  width: 60px; /* 이미지의 크기 조정 */
+  height: 60px;
+  border-radius: 20%; /* 원형 이미지로 만들기 위해 반지름 설정 */
+  background-size: cover; /* 이미지를 커버하는 크기로 조정 */
+  background-position: left; /* 이미지 중앙 정렬 */
+  position: absolute; /* 위치 설정 */
+  top: 25%; /* 상단에서의 위치 (세로 중앙 정렬을 위해 50%로 설정) */
+  left: 15%; /* 좌측에서의 위치 (가로 중앙 정렬을 위해 50%로 설정) */
+  transform: translate(-50%, -50%); /* 가운데 정렬을 위해 좌표 조정 */
+}
+
+.profile .profile-image.image1 {
+  background-image: var(--image1);
+}
+
+.profile .profile-image.image2 {
+  background-image: var(--image2);
+}
+
+/* 추가 프로필 이미지에 대한 클래스 */
+.profile .profile-image.image3 {
+  background-image: var(--image3);
+}
+
+.profile .profile-image.image4 {
+  background-image: var(--image4);
+}
+
+.profile .profile-image.image5 {
+  background-image: var(--image5);
+}
+
+/* 추가 프로필 이미지에 대한 클래스 */
+.profile .profile-image.image6 {
+  background-image: var(--image6);
+}
+
+.profile .profile-image.image7 {
+  background-image: var(--image7);
+}
+
+.profile h2 { 
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.profile p {
+  color: #777;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile:nth-child(-n+4) {
+  grid-row: 1; /* 첫째 줄에 위치 */
+}
+
+.profile:nth-child(n+5) {
+  grid-row: 2; /* 둘째 줄에 위치 */
+  align-self: center; /* 가로 중앙 정렬 */
+  align-items: center;
+}
+
+.au-comment{
+  font-size: 18px;
+  font-weight: 500;}

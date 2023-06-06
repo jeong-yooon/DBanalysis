@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'acc/signup.css' %}">
+    {% comment %} <head>
+        <meta charset="UTF-8">
+        <title>회원가입</title>
+        <link rel="stylesheet" href="signup.css">
+        
+    </head>     {% endcomment %}
+    <form method="POST">
+    {% csrf_token %}
+        <body>
+            <!-- header -->
+            
+            <div id="header">
+                <h1>회원가입</h1>
+            </div>
+
+
+            <!-- wrapper -->
+            <div id="wrapper">
+
+                <!-- content-->
+                <div id="content">
+
+                    <!-- ID -->
+                    <div>
+                        <h3 class="join_title">
+                            <label for="username">아이디</label>
+                        </h3>
+                        <span class="box int_id">
+                            <input type="text" id="username" name="username" class="int" maxlength="20" style="background-color:transparent;" >
+                        </span>
+                        <span class="error_next_box"></span>
+                    </div>
+
+                    <!-- PW1 -->
+                    <div>
+                        <h3 class="join_title"><label for="password1">비밀번호</label></h3>
+                        <span class="box int_pass">
+                            <input type="password" id="password1" name="password1" class="int" maxlength="20" style="background-color:transparent;">
+                        </span>
+                    </div>
+
+                    <!-- PW2 -->
+                    <div>
+                        <h3 class="join_title"><label for="password2">비밀번호 재확인</label></h3>
+                        <span class="box int_pass_check">
+                            <input type="password" id="password2" name="password2" class="int" maxlength="20" style="background-color:transparent;">
+                        </span>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div>
+                        <h3 class="join_title"><label for="email">E-mail</label></h3>
+                        <span class="box int_email">
+                            <input type="text" id="email" name="email" class="int" maxlength="100" style="background-color:transparent;">
+                        </span>   
+                    </div>
+
+                    <!-- JOIN BTN-->
+                    <div class="btn_area">
+                        <button type="submit" id="btnJoin" onclick="check()">
+                            <span>가입하기</span>
+                        </button>
+                    </div>
+
+
+                </div> 
+                <!-- content-->
+
+            </div> 
+            <!-- wrapper -->
+
+        </body>
+</form>
+{% endblock %}
+<script src = "{%static 'acc/signup.js'%}">
+</script>

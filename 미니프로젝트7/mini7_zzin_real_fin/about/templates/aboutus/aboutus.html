@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'aboutus/aboutus.css' %}">
+  
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+<p class = 'au-comment' style="padding-left: 20px;">KT AIVLE SHCOOL 3기 AI TRACK 18조 입니다.</p>
+
+  <main>
+    <div class="profile">
+      <div class="profile-image image1" style="--image1: url('https://cdn.vox-cdn.com/thumbor/8o77pQGxiK4QcuQq34Gn44PhVUc=/0x0:2842x1470/920x613/filters:focal(1209x317:1663x771):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/53961067/bossbabycover.0.jpg');"></div>
+      <h2>이현지</h2>
+      <p>BOSS / AI Developer</p>
+      <p>dlguswl13681368@gmail.com</p>
+    </div>
+    
+    <div class="profile">
+      <div class="profile-image image2" style="--image2: url('/static/image/image2.jpg');"></div>
+      <h2>김예찬</h2>
+      <p>AI Developer</p>
+      <p>mropean4946@gmail.com</p>
+    </div>
+    
+    <div class="profile">
+      <div class="profile-image image3" style="--image3: url('/static/image/image3.jpg');"></div>
+      <h2>박미나</h2>
+      <p>AI Developer</p>
+      <p>alsk5304@gmail.com</p>
+    </div>
+    
+    <div class="profile">
+      <div class="profile-image image4" style="--image4: url('/static/image/image4.jpg');"></div>
+      <h2>김철우</h2>
+      <p>Backend</p>
+      <p>chulwoo9294@naver.com</p>
+    </div>
+
+    <div class="profile">
+      <div class="profile-image image5" style="--image5: url('/static/image/image5_f.jpg');"></div>
+        <h2>이충영</h2>
+        <p>Backend</p>
+        <p>jkll9183@gmail.com</p>
+      </div>
+    
+    <div class="profile">
+      <div class="profile-image image6" style="--image6: url('/static/image/image6.jpg');"></div>
+      <h2>최정윤</h2>
+      <p>Frontend</p>
+      <p>chjy1819@gmail.com</p>
+    </div>
+    
+    <div class="profile">
+      <div class="profile-image image7" style="--image7: url('/static/image/chunsik.jpg');"></div>
+      <h2>오재욱</h2>
+      <p>Frontend</p>
+      <p>dds03011@gmail.com</p>
+    </div>    
+  </main>
+{% include "footer.html" %}
+{% endblock %}
