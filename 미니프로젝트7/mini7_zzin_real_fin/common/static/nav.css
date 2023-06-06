@@ -1,0 +1,27 @@
+.header_cover{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4F5243;
+    padding: 0px 20px;
+}
+
+.header_login > a {
+    margin: 0px 5px;
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: white; /* 링크의 색상 제거 */
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header_menu_btn{
+    margin: 0px 15px;
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: white; /* 링크의 색상 제거 */
+    font-weight: 600;
+}
+
+.header_menu_btn:hover{
+    color: black;
+    /* transition: 0.3s; */
+}

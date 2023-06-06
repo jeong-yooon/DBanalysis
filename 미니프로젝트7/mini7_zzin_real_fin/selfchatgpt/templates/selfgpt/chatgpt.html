@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'selfgpt/chatgpt.css' %}">
+<form action="chat" method="post" entype="application/x-www-form-urlencoded">
+    {% csrf_token %}
+    <div class="gpt_title_wrapper">
+        <div class ="titlebackground">텍스트 번역 서비스</div>
+    </div>
+    <div class="gtp_content_text">Chat GPT 기반 텍스트 번역 서비스 입니다. 텍스트를 입력하여 chat gpt에게 질문하세요.</div>
+    <div class="gpt_content_wrapper">
+        <textarea id="question" name="question" placeholder = '텍스트를 입력하세요.'></textarea>
+        <input type="submit" value="ChatGPT에게 질문하기">
+        <textarea id="answer" name="answer"></textarea>
+    </div>
+
+</form>
+{% include "footer.html" %}
+{% endblock %}

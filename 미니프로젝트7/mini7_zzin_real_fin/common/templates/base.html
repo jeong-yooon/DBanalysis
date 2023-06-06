@@ -1,0 +1,19 @@
+<!doctype html>
+{% load static %}
+<html>
+    <head>
+        <title>Django</title>
+        <meta charset="utf-8">
+        <link rel="import" href="header.html">
+        <link rel="stylesheet" href="{% static 'base.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        {% include "nav.html" %}
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>

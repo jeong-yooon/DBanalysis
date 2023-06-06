@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'nav.css' %}">
+<nav class="header_cover">
+    <p class="header_menu">
+        <a class="header_menu_btn" href="/">HOME</a>
+        <a class="header_menu_btn" href="/selfchatgpt/">TEXT</a>
+        <a class="header_menu_btn" href="/selfsignlanguagetochatgpt/">SIGNLANGUAGE</a>
+        <a class="header_menu_btn" href="/about/">ABOUT</a>
+    </p>
+    <p class="header_login">
+        {% if user.is_authenticated  %}
+        <a href={% url 'accounts:logout' %}>{{ user.username }} 로그아웃</a>
+        {% else %}
+        <a href={% url 'accounts:signup' %}>회원가입</a>
+        <a>|</a>
+        <a href={% url 'accounts:login' %}>로그인</a>
+        {% endif %}
+    </p>
+    
+</nav>
