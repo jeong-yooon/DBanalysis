@@ -1,0 +1,25 @@
+Model: "sequential_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d_16 (Conv2D)          (None, 26, 26, 32)        320       
+                                                                 
+ max_pooling2d_16 (MaxPoolin  (None, 13, 13, 32)       0         
+ g2D)                                                            
+                                                                 
+ conv2d_17 (Conv2D)          (None, 11, 11, 64)        18496     
+                                                                 
+ max_pooling2d_17 (MaxPoolin  (None, 5, 5, 64)         0         
+ g2D)                                                            
+                                                                 
+ flatten_8 (Flatten)         (None, 1600)              0         
+                                                                 
+ dense_16 (Dense)            (None, 64)                102464    
+                                                                 
+ dense_17 (Dense)            (None, 1)                 65        
+                                                                 
+=================================================================
+Total params: 121,345
+Trainable params: 121,345
+Non-trainable params: 0
+_________________________________________________________________

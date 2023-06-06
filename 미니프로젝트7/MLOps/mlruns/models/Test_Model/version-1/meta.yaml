@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1684373339469
+current_stage: None
+description: null
+last_updated_timestamp: 1684373339469
+name: Test_Model
+run_id: eba5b0985bbf4eaf84a041b887a1ccfd
+run_link: null
+source: file:///c:/Users/User/%EB%AF%B8%EB%8B%88%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B87/MLOps/mlruns/0/eba5b0985bbf4eaf84a041b887a1ccfd/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 1
